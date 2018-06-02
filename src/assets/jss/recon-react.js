@@ -163,6 +163,12 @@ const cardSubtitle = {
     marginTop: "-.375rem"
 };
 
+const formControl = {
+    paddingBottom: "7px",
+    margin: "27px 0 0 0",
+    position: "relative"
+}
+
 export {
     //variables
     drawerWidth,
@@ -197,5 +203,7 @@ export {
     title,
     cardTitle,
     cardLink,
-    cardSubtitle
+    cardSubtitle,
+
+    formControl
 };

@@ -1,4 +1,4 @@
-import { container } from '../recon-react';
+import { container, formControl } from '../recon-react';
 
 const loginPageStyle = theme => ({
     container: {
@@ -33,35 +33,6 @@ const loginPageStyle = theme => ({
     leftIcon: {
         marginRight: theme.spacing.unit,
     },
-    /*hrText: {
-        lineHeight: "1em",
-        position: "relative",
-        outline: 0,
-        border: 0,
-        color: "black",
-        textAlign: "center",
-        height: "1.5em",
-        opacity: .5,
-        '&:after': {
-            content: "attr(data-content)",
-            position: "relative",
-            display: "inline-block",
-            // color: "black",
-            padding: "0 .5em",
-            lineHeight: "1.5em",
-            color: "#818078",
-            backgroundColor: "#fcfcfa"
-        },
-        '&:before': {
-            content: "",
-            // background: "linear-gradient(to right, transparent, #818078, transparent)",
-            position: "absolute",
-            left: 0,
-            top: "50%",
-            width: "100%",
-            height: "1px"
-        },
-    },*/
     hrBorder: {
         width: "100%",
         height: '1px',
@@ -73,7 +44,7 @@ const loginPageStyle = theme => ({
         padding: "0 .5em",
         lineHeight: "1.5em",
         color: "#818078",
-        backgroundColor: "#fcfcfa",
+        backgroundColor: "#fff",
         position: "absolute",
         left: 0,
         right: 0,
@@ -81,6 +52,29 @@ const loginPageStyle = theme => ({
         width: "30px",
         textAlign: "center",
         top: "-9px"
+    },
+
+    wrapper: {
+        margin: theme.spacing.unit,
+        position: "relative"
+    },
+    formControl: {
+        ...formControl
+    },
+    formControlLabel: {
+        marginLeft: 0
+    },
+    checkboxSize: {
+        width: 21,
+        height: 21,
+        marginRight: 10
+    },
+    buttonProgress: {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        marginTop: -12,
+        marginLeft: -12,
     }
 })
 
