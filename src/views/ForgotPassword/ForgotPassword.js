@@ -87,7 +87,7 @@ class ForgotPassword extends React.Component {
                         {!this.state.cardAnimaton
                             ? (<div className={classes.back}>
                                     <Link to="/" className={LinkClasses}>
-                                        <Icon className={classes.leftIcon}>back</Icon><span>Back to Login</span>
+                                        <Icon className={classes.leftIcon}>keyboard_backspace</Icon><span>Back to Login</span>
                                     </Link>
                                 </div>)
                             : null
