@@ -27,6 +27,7 @@ function CustomCheckbox({ ...props }) {
                         checked: classes.checked,
                     }}
                     {...checkProps}
+                    onChange={props.changeFiled}
                 />
             }
         />
